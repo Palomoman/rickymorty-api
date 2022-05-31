@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Characters from "./components/Characters";
 import Pages from "./components/Pages";
+import Buscador from "./components/Buscador";
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
     <>
       <Navbar brand="Rick & Morty App" />
       <div className="container mt-5">
+        <Buscador />
         <Pages prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
         <Characters characters={characters} />
         <Pages prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
