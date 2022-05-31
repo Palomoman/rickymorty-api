@@ -7,10 +7,6 @@ const Buscador = () => {
     const searcher = (e) => {
         setSearch(e.target.value)
     }
-
-    if (!search) {
-        results = users
-    }
     return (
         <div className="containerInput">
             <input
